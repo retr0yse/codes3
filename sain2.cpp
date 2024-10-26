@@ -8,7 +8,6 @@ int main() {
 	const int ftInMile = 5280;
 	const double kmInMile = 1.6;
 	int dMile, dFt, dKm, dM;
-
 	cout << "Растояние в милях и футах." << endl;
 	cout << "Мили: ";
 	cin << dMile;
