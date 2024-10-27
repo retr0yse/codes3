@@ -1,25 +1,23 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cstdlib>
-
 using namespace std;
-
 int main() {
 	system("chcp 1251>nul");
 	const int ftInMile = 5280;
 	const double kmInMile = 1.6;
 	int dMile, dFt, dKm, dM;
-	cout << "Ðàñòîÿíèå â ìèëÿõ è ôóòàõ." << endl;
-	cout << "Ìèëè: ";
+	cout << "Ð Ð°ÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð² Ð¼Ð¸Ð»ÑÑ… Ð¸ Ñ„ÑƒÑ‚Ð°Ñ…." << endl;
+	cout << "ÐœÐ¸Ð»Ð¸: ";
 	cin << dMile;
-	cout << "ôóòû: ";
+	cout << "Ð¤ÑƒÑ‚Ñ‹: ";
 	cin << dFt;
 	double distMile = dMile + (double)dFt / ftInMile;
 	double distKm = distMile * kmInMile;
 	dKm = (int)distKm;
 	dM = (int)((distKm - dKm) * 1000);
-	cout << "Ðàñòîÿíèå â êèëîìåòðàõ è ìåòðàõ.";
-	cout << "Êèëîìåòðû: " << dkm << endl;
-	cout << "Ìåòðû" << dM << endl;
+	cout << "Ð Ð°ÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð² ÐºÐ¸Ð»Ð¾Ð¼ÐµÑ‚Ñ€Ð°Ñ… Ð¸ Ð¼ÐµÑ‚Ñ€Ð°Ñ…";
+	cout << "ÐºÐ¸Ð»Ð¾Ð¼ÐµÑ‚Ñ€Ñ‹: " << dkm << endl;
+	cout << "Ð¼ÐµÑ‚Ñ€Ñ‹" << dM << endl;
 	system("pause>nul");
 	return 0;
 }
